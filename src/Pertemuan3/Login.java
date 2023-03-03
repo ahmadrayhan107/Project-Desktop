@@ -98,6 +98,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(txtUsername.getText().contentEquals("rayhan") && txtPassword.getText().contentEquals("1234")){
             new FormMahasiswa().setVisible(true);
+            dispose();
         }
         else if(!txtUsername.getText().contentEquals("rayhan")){
             JOptionPane.showMessageDialog(rootPane, "Username Salah");
